@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CalendarWeekSelection"
+             x:Class="CalendarWeekSelection.MainPage"
+             xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
+    <ContentPage.Behaviors>
+        <local:CalendarBehavior/>
+    </ContentPage.Behaviors>
+    <ContentPage.Content>
+        <calendar:SfCalendar x:Name="calendar" 
+                             SelectionMode="RangeSelection" 
+                             SelectedRange="{Binding SelectedDays}">
+            <calendar:SfCalendar.BindingContext>
+                <local:CalendarViewModel />
+            </calendar:SfCalendar.BindingContext>
+        </calendar:SfCalendar>
+    </ContentPage.Content>
+</ContentPage>
