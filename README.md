@@ -1,4 +1,2 @@
-# Calendar week Selection
-How to select the Calendar Week in Xamarin.Forms?
-
-Xamarin.Forms calendar supports selecting the entire week using the selection mode as 'RangeSelection' and binding SfCalendar's 'SelectedDates' property using the MVVM pattern.
+# How to select the Calendar Week in Xamarin.Forms?
+Xamarin.Forms calendar supports selecting the entire week using the selection mode as 'RangeSelection' and binding SfCalendar's ' SelectedDates ' property using the MVVM pattern. Calendar week days collection will be retrieved from given single selected date in calendar. Based on the selected date we can generate its all calendar week days and bind it to `SelectedDates`.
